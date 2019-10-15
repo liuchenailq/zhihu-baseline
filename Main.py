@@ -1634,7 +1634,7 @@ model = DeepFM(linear_feature_columns=linear_feature_columns, dnn_feature_column
 model.compile("adam", "binary_crossentropy", metrics=["binary_crossentropy", "auc"],)
 
 """第三步：调用fit()函数训练模型"""
-model.fit(train_model_input, train[target].values, batch_size=8192, epochs=10, validation_data=[vaild_model_input, vaild[target].values], verbose=1, model_cache_path='E:\\competition\\看山杯\\models\\deepfm.model')
+model.fit(train_model_input, train[target].values, batch_size=8192, epochs=50, validation_data=[vaild_model_input, vaild[target].values], verbose=1, model_cache_path='E:\\competition\\看山杯\\models\\deepfm.model')
 
 """预测"""
 test_model_input = {name: test[name] for name in feature_names}
