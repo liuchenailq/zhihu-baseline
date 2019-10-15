@@ -12,7 +12,7 @@ Main.py: 运行模型并取得预测结果
 
 运行环境： DeepCTR-Torch (https://github.com/shenweichen/DeepCTR-Torch)
 
-分数（AUC）：线下  线上  （没有采用五折交叉验证）
+分数（AUC）：线下0.6903   线上0.691804111317667 （没有采用五折交叉验证）
 
 特征说明
  
