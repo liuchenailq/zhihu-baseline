@@ -1089,7 +1089,7 @@ class BaseModel(nn.Module):
         :param draw_pictures: 是否绘制指标图表
         :param save_results: 是否记录结果到文件
         :param model_cache_path 模型暂存路径
-        :param early_stop: 早停策略 当auc下降了3次之后停止训练
+        :param early_stop: 早停策略 当auc下降了early_stop次之后停止训练
         """
         if isinstance(x,dict):
             # feature_index是有序字典，所以保证了x的索引和feature_index一致
