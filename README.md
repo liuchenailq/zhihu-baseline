@@ -49,6 +49,6 @@ utils.py: deepctr运行环境
 ---
 
 
-**最后，哪位大佬愿意带带小弟的请添加个人微信号**
+**最后，有意向共同参赛、共同学习的伙伴请添加个人微信号**
 ![image](https://img-blog.csdnimg.cn/20191016100122904.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMwMzc0NTQ5,size_16,color_FFFFFF,t_70)
 
