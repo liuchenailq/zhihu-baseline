@@ -44,7 +44,7 @@ from utils import *
 """ 运行DeepFM """
 
 path = 'E:\\competition\\看山杯\\data\\data_set_0926\\'
-train = pd.read_csv(path + 'train.txt', sep='\t', nrows=5000000)
+train = pd.read_csv(path + 'train.txt', sep='\t')
 test = pd.read_csv(path + 'test.txt', sep='\t')
 
 # 测试
@@ -55,36 +55,14 @@ test = pd.read_csv(path + 'test.txt', sep='\t')
 data = pd.concat([train, test], ignore_index=True, sort=False)
 # print(data.head())
 
-# 盐值分数转换
-def salt_score_trans(x):
-    if x <= 0:
-        return x
-    if 1 <= x <= 10:
-        return 1
-    if 10 < x <= 100:
-        return 2
-    if 100 < x <= 200:
-        return 3
-    if 200 < x <= 300:
-        return 4
-    if 300 < x <= 400:
-        return 5
-    if 400 < x <= 500:
-        return 6
-    if 500 < x <= 600:
-        return 7
-    if x > 600:
-        return 8
-
-data['m_salt_score'] = data['m_salt_score'].apply(lambda x: salt_score_trans(x))
 
 # 单值类别特征
 fixlen_category_columns = ['m_sex', 'm_access_frequencies', 'm_twoA', 'm_twoB', 'm_twoC', 'm_twoD', 'm_twoE', 'm_categoryA', 'm_categoryA',
                            'm_categoryB', 'm_categoryC', 'm_categoryD', 'm_categoryE', 'm_num_interest_topic', 'num_topic_attention_intersection',
-                           'q_num_topic_words', 'num_topic_interest_intersection', 'm_salt_score'
+                           'q_num_topic_words', 'num_topic_interest_intersection'
                          ]
 # 数值特征
-fixlen_number_columns = ['m_num_atten_topic', 'q_num_title_chars_words', 'q_num_desc_chars_words', 'q_num_desc_words', 'q_num_title_words',
+fixlen_number_columns = ['m_salt_score', 'm_num_atten_topic', 'q_num_title_chars_words', 'q_num_desc_chars_words', 'q_num_desc_words', 'q_num_title_words',
                          'days_to_invite'
                         ]
 
