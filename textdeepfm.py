@@ -1,5 +1,10 @@
 """
 TextDeepFM模型
+
+在DeepFM模型的基础上加入文本特征
+
+将用户感兴趣的话题作为用户的embedding
+将问题绑定的话题作为问题的embedding
 """
 import pandas as pd
 import numpy as np
