@@ -9,7 +9,7 @@ utils.py: deepctr运行环境
 
 ## 模型说明
 
-"""   
+ 
 模型一：DeepFM
 
 运行环境： DeepCTR-Torch (https://github.com/shenweichen/DeepCTR-Torch)
@@ -31,10 +31,12 @@ utils.py: deepctr运行环境
 用户关注、感兴趣的话题和问题绑定的话题交集计数   
 邀请距离问题创建的天数
 
-"""
+
+---
 
 
-"""  
+
+
 模型二：TextDeepFM
 
 模型说明：在DeepFM基础上增加文本特征，将用户感兴趣的话题作为用户的embedding，将问题绑定的话题作为问题的embedding。
@@ -43,8 +45,10 @@ utils.py: deepctr运行环境
 分数（AUC）：线下  线上  （没有采用五折交叉验证）
 
 
-"""
 
-**最后，有一起参赛的小伙伴请添加个人微信号**
+---
+
+
+**最后，哪位大佬愿意带带小弟的请添加个人微信号**
 ![image](https://img-blog.csdnimg.cn/20191016100122904.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMwMzc0NTQ5,size_16,color_FFFFFF,t_70)
 
