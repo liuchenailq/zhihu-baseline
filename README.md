@@ -3,7 +3,9 @@
 ## 文件说明
 
 features.py : 从原始数据集中生成特征   
-Main.py: 运行模型并取得预测结果
+deepfm.py: 运行deepfm模型并取得预测结果
+textdeepfm.py: 运行textdeepfm模型并取得预测结果
+utils.py: deepctr运行环境
 
 ## 模型说明
 
@@ -28,6 +30,8 @@ Main.py: 运行模型并取得预测结果
 **3.用户问题交叉特征**  
 用户关注、感兴趣的话题和问题绑定的话题交集计数   
 邀请距离问题创建的天数
+
+
 
 
 
