@@ -3,12 +3,11 @@
 ## 文件说明
 
 features.py : 从原始数据集中生成特征   
-deepfm.py: 运行DeepFM模型并取得预测结果  
-textdeepfm.py: 运行TextDeepFM模型并取得预测结果  
+deepfm.py: 运行deepfm模型并取得预测结果  
+textdeepfm.py: 运行textdeepfm模型并取得预测结果  
 utils.py: deepctr运行环境
 
 ## 模型说明
-
  
 模型一：DeepFM
 
@@ -31,15 +30,15 @@ utils.py: deepctr运行环境
 用户关注、感兴趣的话题和问题绑定的话题交集计数   
 邀请距离问题创建的天数
 
----
 
+---
 
 模型二：TextDeepFM
 
 模型说明：在DeepFM基础上增加文本特征，将用户感兴趣的话题作为用户的embedding，将问题绑定的话题作为问题的embedding。
 文本特征利用TextCNN作为特征提取器，提取的特征和原始特征向量拼接一起传给DNN训练。
 
-分数（AUC）：线下  线上  （没有采用五折交叉验证）
+分数（AUC）：线下0.7251481779973195  线上0.701741036192302  （没有采用五折交叉验证）
 
 ---
 
